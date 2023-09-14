@@ -7,3 +7,6 @@ jobs:
     steps:
       - run: ls -l # Liste les fichier du répertoire courant
       - run: cat README.md # Affiche le contenu du fichier `README.md` à la base du dépôt
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .
