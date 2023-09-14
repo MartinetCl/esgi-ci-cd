@@ -9,4 +9,3 @@ jobs:
       - run: |
           npm install
           npm run lint
-      - run: npm run start
