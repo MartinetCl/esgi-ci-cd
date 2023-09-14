@@ -7,8 +7,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          sudo apt-get update
-          sudo apt-get npm --yes
           npm install
           npm run lint
       - run: npm run start
